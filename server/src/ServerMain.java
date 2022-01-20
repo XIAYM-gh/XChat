@@ -44,6 +44,8 @@ public class ServerMain {
     PluginMain.init();
     Logger.info("插件已加载完成!");
 
+    Perms.init();
+
     Logger.info("服务器启动端口: "+x.get("server_port","12345"));
     if(x.get("authorization_required","true").equals("true")){
       Logger.success("服务器已启用密码安全验证.");
